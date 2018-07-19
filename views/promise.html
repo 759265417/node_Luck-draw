@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function foo(){
+		var promise = new Promise(function(resolve,reject){
+				resolve();
+				// reject();
+		});
+		return promise;
+	}
+	foo().then(function(){
+		console.log("chenggong");
+	}).catch(function(){
+		console.log("shibai");
+	});
+
+
+	function foo1(){
+		var promise = new Promise({});
+		setTimeout(()=>{
+			console.log(111);
+		},1000);
+		return promise;
+	}
+</script>
+</body>
+</html>
